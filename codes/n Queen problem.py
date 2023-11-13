@@ -1,4 +1,4 @@
-# n queens
+# N queens && Constraint satisfaction problem
 
 
 def is_safe(board,row,col,n):
