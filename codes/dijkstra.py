@@ -22,7 +22,7 @@ def dijk(graph,start):
 
     return dist
 
-n=int(input("Enter the number of vertices : "))
+n=int(input("Enter the number of vertices : " ))
 graph=[]
 print("Enter the adjacency matrix:")
 for _ in range(n):
