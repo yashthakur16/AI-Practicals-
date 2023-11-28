@@ -7,7 +7,8 @@ def fact(n):
         return 1
     else:
         return n* fact(n-1) #recursive call
-    
+
+
 
 a=7
 print(multiply(a,6)) #arguments
