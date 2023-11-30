@@ -25,6 +25,7 @@ def dijk(graph,start):
 n=int(input("Enter the number of vertices : " ))
 graph=[]
 print("Enter the adjacency matrix:")
+
 for _ in range(n):
     row = list(map(int, input().split()))
     graph.append(row)
