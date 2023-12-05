@@ -1,0 +1,24 @@
+function unify(expr1, expr2, theta):
+    if theta is FAILURE:
+        return FAILURE
+    else if expr1 == expr2:
+        return theta
+    else if isVariable(expr1):
+        return unifyVar(expr1, expr2, theta)
+    else if isVariable(expr2):
+        return unifyVar(expr2, expr1, theta)
+    else if isCompound(expr1) and isCompound(expr2):
+        return unify(expr1.args, expr2.args, unify(expr1.op, expr2.op, theta))
+    else:
+        return FAILURE
+
+function unifyVar(var, x, theta):
+    if var occurs in x:
+        return FAILURE
+    else:
+        return extend(theta, var, x)
+
+function extend(theta, var, x):
+    theta_prime = theta.copy()
+    theta_prime[var] = x
+    return theta_prime
