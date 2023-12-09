@@ -9,7 +9,6 @@ def fact(n):
         return n* fact(n-1) #recursive call
 
 
-
 a=7
 print(multiply(a,6)) #arguments
 print(a) # checking the scope of a
