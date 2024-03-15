@@ -13,4 +13,3 @@ a=7
 print(multiply(a,6)) #arguments
 print(a) # checking the scope of a
 print(fact(5)) # calculating factorial using recursion
-
